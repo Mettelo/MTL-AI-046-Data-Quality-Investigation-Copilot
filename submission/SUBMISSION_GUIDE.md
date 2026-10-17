@@ -2,48 +2,28 @@
 
 ## Release sequence
 
-1. Complete D1–D12 and map all agreed user requirements to deliverables, acceptance criteria, tests and final evidence.
-2. Confirm the approved source/data manifest, rights/attribution, exact cohort/version and reviewer restore access.
-3. Freeze deterministic rules, prompts, model/runtime version, evaluation split, schemas and dependency lock before final held-out evaluation.
-4. Run the deterministic baseline and local-AI workflow. Preserve raw outputs, invalid outputs, retries/fallbacks, rejected claims and measured results; do not replace weak runs with hand-written examples.
-5. Execute the project-specific domain/guardrail tests and **three UAT tasks** with expected/actual results, tester/reviewer, defects and retests. Resolve all critical/high defects.
-6. Have a distinct member perform a clean rerun from the documented source and environment. Record hashes, versions, entry point, elapsed time, discrepancies and reconciliation.
-7. Produce a **2-page decision brief**, **8–12 slides** and a **5–10 minute reproducible demo** for Data Operations Lead. Include five evidence-backed findings, three next actions and at least one defer/unknown case.
-8. Complete `submission/FINAL_SUBMISSION.md`, `CONTRIBUTIONS.md` and the immutable evidence index.
-9. Tag the evaluated commit **`v1.0-mettelo-submission`** and verify reviewer access. Do not silently move the assessed tag.
+1. Complete D1–D12 and map agreed user requirements to deliverables, acceptance criteria, tests and evidence.
+2. Confirm the approved source manifest, rights/attribution, exact cohort and reviewer restore access.
+3. Freeze deterministic DQ rules, controlled scenario recipes, prompts, model/runtime, schemas and dependency lock before final evaluation.
+4. Run the deterministic baseline and local-AI workflow. Preserve raw outputs, invalid outputs, rejected claims and measured results.
+5. Execute project guardrail/domain tests and **three UAT tasks** with expected/actual results, tester/reviewer, defects and retests. Resolve all critical/high defects.
+6. A distinct member performs a clean rerun from the documented source and environment. Record hashes, versions, entry point, elapsed time and discrepancies.
+7. Produce a 2-page decision brief, 8–12 slides and a 5–10 minute reproducible demo for the **Data Operations Lead**.
+8. Complete `submission/FINAL_SUBMISSION.md`, `CONTRIBUTIONS.md` and the evidence index.
+9. Tag the evaluated commit **`v1.0-mettelo-submission`** and verify reviewer access.
 
 ## Required walkthrough
 
-Answer the commissioned decision:
-
-> Prioritise a failed data-quality incident, explain the evidence-supported investigation path and produce a human-reviewed incident handover.
-
 Demonstrate one natural/source issue, one injected issue, one ambiguous cause, one unknown downstream dependency and one reviewed incident export.
 
-Show one failure/edge case and explain what the evidence **does not** support.
+Show one failure/edge case and explain what the evidence does **not** support.
 
-Preserve this project boundary:
-
-> Validation failures show what failed; model-generated root causes remain hypotheses unless supported by evidence. Declared lineage only can support downstream-impact statements.
+Preserve the rule that root-cause and impact claims remain hypotheses unless supported by evidence and declared lineage.
 
 ## Required evidence bundle
 
-- team repository URL, final commit SHA and release tag;
-- reviewed master commit;
-- requirements/traceability index;
-- source/data manifest and restore instructions;
-- deterministic baseline outputs;
-- local model/runtime/prompt/config versions;
-- held-out evaluation results with denominators;
-- failed/rejected/guarded examples;
-- UAT records and defect/retest log;
-- independent clean-rerun record;
-- technical/operational handover;
-- final decision brief and demo;
-- individual contribution evidence.
+Team repository URL/final SHA/tag; reviewed master commit; traceability index; source manifest; deterministic baseline; local model/runtime/prompt versions; held-out evaluation with denominators; failed/rejected examples; UAT/defect log; clean rerun; technical handover; decision brief/demo; contribution evidence.
 
-## Reviewer decision
-
-The reviewer records **ACCEPTED / REWORK / BLOCKED**, actual reviewer, simulated sponsor role, date, unresolved issues and owners/due dates.
+Reviewer records **ACCEPTED / REWORK / BLOCKED**, actual reviewer, simulated sponsor role, date, unresolved issues and owners/due dates.
 
 A filled template, screenshot, video or fluent AI output without executed evidence is not acceptance.

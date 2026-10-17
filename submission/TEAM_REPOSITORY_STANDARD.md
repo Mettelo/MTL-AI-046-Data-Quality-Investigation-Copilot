@@ -2,15 +2,7 @@
 
 Create **MTL-AI-046-<team-name>** under the **Mettelo GitHub organisation** and add each member using their individual GitHub account.
 
-Record in the team README:
-
-- master repository: https://github.com/Mettelo/MTL-AI-046-Data-Quality-Investigation-Copilot
-- reviewed master specification commit SHA;
-- team members and assigned delivery responsibilities;
-- final team commit SHA and release tag;
-- approved data/source version and manifest;
-- exact setup and run instructions;
-- project limitations and simulated-client declaration.
+Record the master repository URL, reviewed master specification commit SHA, team members/responsibilities, final team commit/tag, approved source version and exact run instructions.
 
 ## Required repository structure
 
@@ -18,7 +10,7 @@ Record in the team README:
 README.md
 CONTRIBUTIONS.md
 .gitignore
-requirements.txt or equivalent dependency lock
+requirements.txt or equivalent lock
 config/
 src/
 app/
@@ -48,15 +40,13 @@ submission/
   FINAL_SUBMISSION.md
 ```
 
-Equivalent tool-specific folders are allowed only when the README provides a clear mapping to this standard. Do not create duplicate implementations simply to match folder names.
+Equivalent tool-specific folders are allowed only with an explicit mapping in the README.
 
 ## Data handling
 
-Use the approved source described in the master `data/` pack. Where the master already contains an uploaded `data/raw/` file, the team may obtain that approved source from the master or reacquire it from the documented official URL.
+Use the approved UCI Air Quality source described in the master data pack. The team may obtain the approved raw file from the master `data/raw/` or reacquire it from the documented official source, but must create its own source manifest recording filename, source/version, retrieval/copy date, bytes/hash, licence/terms, parser assumptions and reviewer.
 
-The team must still create its own source manifest recording filename, source/version, retrieval or copy date, bytes/hash, licence/terms, parser assumptions and reviewer. Do not treat the presence of a raw file in the master as proof of successful ingestion or validation.
-
-Large raw payloads and model weights should remain outside the team Git repository unless cohort guidance explicitly allows them. `data/raw/README.md` must explain the restore path and expected hash. Never commit credentials or paid-service secrets.
+Do not treat the presence of the raw ZIP in the master as proof of successful ingestion or validation. Large raw payloads and model weights should remain outside the team Git repository unless cohort guidance says otherwise.
 
 ## README and contribution evidence
 
@@ -66,42 +56,20 @@ State the commissioned decision:
 
 Name **Data Operations Lead** as the simulated sponsor.
 
-Preserve this interpretation boundary:
+Preserve this limitation:
 
-> Validation failures show what failed; model-generated root causes remain hypotheses unless supported by evidence. Declared lineage only can support downstream-impact statements.
+> Validation failures show what failed; model-generated root causes remain hypotheses unless supported by evidence. Only declared lineage can support downstream-impact statements.
 
-Every member must link:
+Every member links substantive artefacts they authored, at least one meaningful peer review, and contribution to UAT, demo or handover. Commit count alone is not Proof.
 
-- substantive artefacts they authored;
-- at least one meaningful peer review;
-- issues/PRs or equivalent collaboration evidence;
-- contribution to UAT, demo or handover.
+## Required project-specific artefacts
 
-Commit count alone is not Proof of contribution.
-
-## Required business/product artefacts
-
-- **D5 Data-quality evidence and impact ledger:** `data/curated/dq-evidence-impact-ledger.csv` plus `docs/05-evidence/dq-evidence-impact-ledger.md`.
+- **D5 Data-quality evidence and impact ledger:** `data/curated/dq-evidence-impact-ledger.csv` and `docs/05-evidence/dq-evidence-impact-ledger.md`.
 - **D6 AI investigation evaluation:** `docs/06-ai/investigation-evaluation.md` plus `evaluation/results.csv`.
-- **D7 Investigation decision framework:** `docs/07-decision-framework/investigation-policy.md` plus `docs/07-decision-framework/case-register.csv`.
-- **D8 Working copilot and review workflow:** `app/README.md` plus `outputs/examples/`.
-- **D11 Incident operating and recommendation pack:** `deliverables/incident-operating-pack.pdf` plus `deliverables/slides/`.
+- **D7 Investigation decision framework:** `docs/07-decision-framework/investigation-policy.md` plus `case-register.csv`.
+- **D8 Working copilot/review workflow:** `app/README.md` plus reproducible examples in `outputs/examples/`.
+- **D11 Incident operating and recommendation pack:** `deliverables/incident-operating-pack.pdf` plus editable slides.
 
-These are default delivery paths. An equivalent format is acceptable only when explicitly mapped in the evidence index.
+Maintain a D1–D12 / acceptance / test / UAT evidence index with owner, distinct reviewer, state and final-commit path.
 
-## Evidence index
-
-Maintain a final D1–D12 / acceptance / test / UAT evidence index with:
-
-- requirement or criterion ID;
-- artefact path;
-- executed result;
-- author;
-- distinct reviewer;
-- date;
-- final state;
-- final-commit link.
-
-## Team organisation
-
-Recommended team size: **3–5 people**. Members may combine responsibilities across delivery/business analysis, data governance, engineering, AI, product/interface and assurance. Critical calculations/evaluations and the final clean rerun should be reviewed or executed by a different member where team size permits.
+Recommended team size: **3–5 people**.
