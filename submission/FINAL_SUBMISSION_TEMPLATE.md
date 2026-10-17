@@ -1,108 +1,105 @@
-# MTL-AI-046 — Final team submission
+# MTL-AI-046 — Final submission template
 
-Copy to FINAL_SUBMISSION.md. Replace placeholders only with executed results; retain NOT RUN/BLOCKED where evidence is absent.
+> Copy this file into the team repository as `submission/FINAL_SUBMISSION.md`. Replace bracketed fields with actual executed evidence. Unexecuted items remain **NOT RUN** or **BLOCKED**.
 
-## Identity and scope
+## Identity
 
-Team / member names / roles: [complete]
-Team repository / final commit / tag: [complete]
-Master repository / reviewed commit: [complete]
-Actual reviewer / date / simulated sponsor role: [complete]
-Scope and educational research declaration: [complete]
+Team repository: [complete]  
+Team members / delivery responsibilities: [complete]  
+Master repository: https://github.com/Mettelo/MTL-AI-046-Data-Quality-Investigation-Copilot  
+Reviewed master commit: [complete]  
+Final team commit / tag / date: [complete]  
+Delivery lead / independent reviewer: [complete]  
+Simulated sponsor: Data Operations Lead
 
-## Source and environment
+## Commissioned decision
 
-S1 freeze / actual archive/member hashes / bytes / retrieval UTC: [complete]
-Observed record counts, exclusions/quarantine and date bounds: [complete]
-Rights notices/citation / research-use decision / preserved notice links: [complete]
-External input/model restore and reviewer access (no credentials): [complete]
-Runtime/model digest/quantisation/license / prompt/reference/config hashes: [complete]
-OS/CPU/RAM/disk / tested dependency lock / exact run entry point: [complete]
-Incremental spend and required services; confirm no paid dependency: [complete]
+Prioritise a failed data-quality incident, explain the evidence-supported investigation path and produce a human-reviewed incident handover.
 
-## Findings and recommendation
+Approved scope / deviations: [complete]
 
-| Finding | Measured result with numerator/denominator/unit | Final-commit evidence | Implication and limitation |
-| --- | --- | --- | --- |
+Preserved limitation:
+
+> Validation failures show what failed; model-generated root causes remain hypotheses unless supported by evidence. Declared lineage only can support downstream-impact statements.
+
+## Source, environment and cost
+
+Approved source/version/hash and restore route: [complete]  
+Rights/attribution and transformations: [complete]  
+Runtime/model/version/digest/settings: [complete]  
+OS/CPU/RAM and dependency lock: [complete]  
+Exact run entry point: [complete]  
+Incremental software/service spend: [complete — core route should not require paid services]
+
+## Five findings and actions
+
+| Finding | Measured result / denominator | Final-commit evidence | Implication / limitation |
+|---|---|---|---|
 | F1 | [complete] | [link] | [complete] |
 | F2 | [complete] | [link] | [complete] |
 | F3 | [complete] | [link] | [complete] |
 | F4 | [complete] | [link] | [complete] |
 | F5 | [complete] | [link] | [complete] |
 
-Baseline versus model recommendation (retain baseline / revise copilot / research pilot): [complete]
-Three next actions with accountable owner, evidence and review date: [complete]
-One deferred/unknown-impact case and missing evidence: [complete]
-Benefits measured / assumptions / explicitly unmeasured: [complete]
+Three next actions with owner and review date: [complete]  
+One defer/unknown case and missing evidence: [complete]  
+Measured benefits / assumptions / explicitly unmeasured benefits: [complete]
 
-## Metrics
+## D1–D12 evidence
 
-Show raw first-attempt, guarded-display and human-reviewed results separately where applicable. Include failures/timeouts and actual sample sizes.
+| Deliverable | Artefact / final-commit link | Author / reviewer | Executed result | State |
+|---|---|---|---|---|
+| D1 Discovery & requirements | [link] | [names] | [complete] | NOT RUN |
+| D2 Source & governance | [link] | [names] | [complete] | NOT RUN |
+| D3 Reproducible pipeline/model | [link] | [names] | [complete] | NOT RUN |
+| D4 Quality / baseline / gold evidence | [link] | [names] | [complete] | NOT RUN |
+| D5 Evidence / metric contract | [link] | [names] | [complete] | NOT RUN |
+| D6 AI capability & evaluation | [link] | [names] | [complete] | NOT RUN |
+| D7 Decision / guardrail policy | [link] | [names] | [complete] | NOT RUN |
+| D8 Working review product | [link] | [names] | [complete] | NOT RUN |
+| D9 Independent evaluation / assurance | [link] | [names] | [complete] | NOT RUN |
+| D10 UAT & technical handover | [link] | [names] | [complete] | NOT RUN |
+| D11 Executive recommendation & demo | [link] | [names] | [complete] | NOT RUN |
+| D12 Final submission & contributions | [link] | [names] | [complete] | NOT RUN |
 
-| Metric | B0 result | M1 raw result | Guarded / reviewed result | Target status / evidence |
-| --- | --- | --- | --- | --- |
-| K1 injected-event recall | [complete] | [shared detector] | [complete] | NOT RUN |
-| K2 clean-control false alert rate | [complete] | [shared detector] | [complete] | NOT RUN |
-| K3 grounded factual precision | [complete] | [complete] | [complete] | NOT RUN |
-| K4 evidence reference validity | [complete] | [complete] | [complete] | NOT RUN |
-| K5 required-field completeness | [complete] | [complete] | [complete] | NOT RUN |
-| K6 usefulness ≥4/5 | [complete] | [complete] | [complete] | NOT RUN |
-| K7 latency/completion | [complete] | [complete] | [complete] | NOT RUN |
+## Project-specific output evidence
 
-24 held-out cases / split integrity / annotator agreement/adjudication / intervals / five reconciliations: [complete]
+- D5 Data-quality evidence and impact ledger: [actual result + immutable link + reviewer]
+- D6 AI investigation evaluation: [actual result + immutable link + reviewer]
+- D7 Investigation decision framework: [actual result + immutable link + reviewer]
+- D8 Working copilot and review workflow: [actual result + immutable link + reviewer]
+- D11 Incident operating and recommendation pack: [actual result + immutable link + reviewer]
 
-## Deliverable and acceptance index
+## Acceptance, tests and UAT
 
-| Deliverable | Criterion | Evidence at final commit | Author / distinct reviewer / date | Status |
-| --- | --- | --- | --- | --- |
-| D1 discovery | AC1 | [link] | [complete] | NOT RUN |
-| D2 source governance | AC2 | [link] | [complete] | NOT RUN |
-| D3 pipeline | AC3 | [link] | [complete] | NOT RUN |
-| D4 scenarios | AC4 | [link] | [complete] | NOT RUN |
-| D5 metrics/impact | AC5 | [link] | [complete] | NOT RUN |
-| D6 local AI | AC6 | [link] | [complete] | NOT RUN |
-| D7 policy/case cards | AC7 | [link] | [complete] | NOT RUN |
-| D8 interface/review/export | AC8 | [link] | [complete] | NOT RUN |
-| D9 evaluation/assurance | AC9 | [link] | [complete] | NOT RUN |
-| D10 handover | AC10 | [link] | [complete] | NOT RUN |
-| D11 recommendation/demo | AC11 | [link] | [complete] | NOT RUN |
-| D12 final/contributions | AC12 | [link] | [complete] | NOT RUN |
+Acceptance-criteria matrix with actual results/evidence: [link]
 
-R1–R8 traceability index: [link]
-SC1 scenario/detection outcome: [actual/evidence/reviewer/status]
-SC2 real inference/validated facts: [actual/evidence/reviewer/status]
-SC3 AI quality and safety: [actual/evidence/reviewer/status]
-SC4 persisted human review: [actual/evidence/reviewer/status]
-SC5 independent assurance/zero cost: [actual/evidence/reviewer/status]
+| Test / UAT | Expected | Actual evidence | Tester / reviewer | Defect / retest | State |
+|---|---|---|---|---|---|
+| Domain/guardrail tests | [complete] | [link] | [names] | [complete] | NOT RUN |
+| UAT1 primary user | [complete] | [link] | [names] | [complete] | NOT RUN |
+| UAT2 reviewer | [complete] | [link] | [names] | [complete] | NOT RUN |
+| UAT3 sponsor/decision owner | [complete] | [link] | [names] | [complete] | NOT RUN |
 
-## Tests and UAT
+Critical/high defects unresolved: [number + evidence]  
+Known lower-severity issues / owner / due date: [complete]
 
-| Test | Expected / actual evidence | Tester / reviewer / date | Defect / retest | Status |
-| --- | --- | --- | --- | --- |
-| DT1 parsing | [complete] | [complete] | [complete] | NOT RUN |
-| DT2 replay | [complete] | [complete] | [complete] | NOT RUN |
-| DT3 control/detection | [complete] | [complete] | [complete] | NOT RUN |
-| DT4 numeric/impact guard | [complete] | [complete] | [complete] | NOT RUN |
-| DT5 ambiguity | [complete] | [complete] | [complete] | NOT RUN |
-| DT6 injection | [complete] | [complete] | [complete] | NOT RUN |
-| DT7 runtime failure | [complete] | [complete] | [complete] | NOT RUN |
-| DT8 review durability | [complete] | [complete] | [complete] | NOT RUN |
-| DT9 evaluation integrity | [complete] | [complete] | [complete] | NOT RUN |
-| DT10 independent rerun | [complete] | [complete] | [complete] | NOT RUN |
-| UAT1 analyst | [complete] | [complete] | [complete] | NOT RUN |
-| UAT2 reviewer | [complete] | [complete] | [complete] | NOT RUN |
-| UAT3 lead | [complete] | [complete] | [complete] | NOT RUN |
+## Independent rerun and handover
 
-Ten case-card links / original drafts / edits / reviewed JSON/Markdown exports: [complete]
-Critical/high defect closure and acknowledged low issues: [complete]
+Independent operator/date: [complete]  
+Clean environment and restored source/model hashes: [complete]  
+Entry point / elapsed time: [complete]  
+Deterministic-output comparison and AI-run differences: [complete]  
+Technical runbook / backup-restore / troubleshooting: [links]
 
-## Rerun and handover
+## Contribution evidence
 
-Actual independent operator/date; clean environment; restored input/model hashes; network-off run; deterministic output comparison; inference differences; timings; discrepancies and resolution: [complete]
-Runbook, backup/restore, slides/demo/static export and contribution evidence: [links]
+`CONTRIBUTIONS.md`: [link]  
+Per-member authored artefacts, substantive reviews and demo/handover contribution: [complete]
 
-## Gate and release decisions
+## Release decision
 
-G1 / G2 / G3 / G4 actual approver, simulated role, date, specification version, evidence and conditions: [complete]
-Final ACCEPTED / REWORK / BLOCKED decision and justification: [complete only after evidence review]
-Remaining limitations / owners / due dates: [complete]
+Actual reviewer/date: [complete]  
+Simulated sponsor role: Data Operations Lead  
+Final decision: **ACCEPTED / REWORK / BLOCKED**  
+Justification: [complete]

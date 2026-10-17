@@ -1,30 +1,49 @@
-# Submission guide
+# MTL-AI-046 — Submission guide
 
 ## Release sequence
 
-1. Finish D1–D12. Reconcile requirement, deliverable, acceptance, scenario/test and evidence IDs.
-2. Verify S1 archive/member hashes, parser/row ledger, preserved notices, dictionary and reviewer restore access. Confirm the educational research boundary.
-3. Freeze rules, scenario windows/splits, runbooks, lineage, prompts, model/runtime and dependency lock. Ensure hidden mutation truth is absent from model input.
-4. Execute B0/M1 held-out comparison and preserve raw first attempts, retries, guards, fallback, annotations, disagreements and actual K1–K7. Record missed targets honestly.
-5. Run DT1–DT10 and three UAT tasks. Retain defects/retests; resolve every critical/high defect.
-6. Have a different member perform the clean offline rerun after installation. Record source/model hashes, versions, deterministic comparisons, generation differences, hardware and elapsed time.
-7. Produce ten case cards, five findings, three owned actions and one defer/unknown case. Present the actual model-versus-baseline trade-off in 8–12 slides and a 5–10-minute demo.
-8. Complete FINAL_SUBMISSION.md, contribution records and evidence index. Freeze final commit/tag and verify reviewer access through the Mettelo cohort route.
+1. Complete D1–D12 and map all agreed user requirements to deliverables, acceptance criteria, tests and final evidence.
+2. Confirm the approved source/data manifest, rights/attribution, exact cohort/version and reviewer restore access.
+3. Freeze deterministic rules, prompts, model/runtime version, evaluation split, schemas and dependency lock before final held-out evaluation.
+4. Run the deterministic baseline and local-AI workflow. Preserve raw outputs, invalid outputs, retries/fallbacks, rejected claims and measured results; do not replace weak runs with hand-written examples.
+5. Execute the project-specific domain/guardrail tests and **three UAT tasks** with expected/actual results, tester/reviewer, defects and retests. Resolve all critical/high defects.
+6. Have a distinct member perform a clean rerun from the documented source and environment. Record hashes, versions, entry point, elapsed time, discrepancies and reconciliation.
+7. Produce a **2-page decision brief**, **8–12 slides** and a **5–10 minute reproducible demo** for Data Operations Lead. Include five evidence-backed findings, three next actions and at least one defer/unknown case.
+8. Complete `submission/FINAL_SUBMISSION.md`, `CONTRIBUTIONS.md` and the immutable evidence index.
+9. Tag the evaluated commit **`v1.0-mettelo-submission`** and verify reviewer access. Do not silently move the assessed tag.
 
-## Demonstration route
+## Required walkthrough
 
-Open a failed batch, inspect source-linked rule evidence, generate a real local model draft, follow a citation and explain a hypothesis. Show absent lineage/ambiguous cause. Edit and approve with a named reviewer, export JSON/Markdown, restart and verify state. Demonstrate model unavailable fallback and a blocked invented count/impact. Finish with actual evaluation and your release recommendation.
+Answer the commissioned decision:
 
-## Independent rerun
+> Prioritise a failed data-quality incident, explain the evidence-supported investigation path and produce a human-reviewed incident handover.
 
-Supply exact tested setup and run commands, source/model restore instructions, environment lock and all required local references/configuration. After installation disconnect the network. Show successful generation plus review/export and exact deterministic evidence comparisons. Do not claim model text must be bit-identical; explain any stochastic/runtime differences and their effect on acceptance.
+Demonstrate one natural/source issue, one injected issue, one ambiguous cause, one unknown downstream dependency and one reviewed incident export.
 
-## Evidence and decisions
+Show one failure/edge case and explain what the evidence **does not** support.
 
-Each test/UAT record includes expected, actual, tester/reviewer/date, status, defect, repair and retest. Each numeric claim has numerator/denominator/unit and source/run/code lineage. Do not replace raw outputs with hand-edited model “examples”.
+Preserve this project boundary:
 
-Final decision is ACCEPTED, REWORK or BLOCKED, signed by an actual reviewer with simulated sponsor/panel role. Unmet critical safety controls cannot be waived by a favourable usefulness score. A recommendation to retain the baseline can be valid analysis while the copilot remains REWORK.
+> Validation failures show what failed; model-generated root causes remain hypotheses unless supported by evidence. Declared lineage only can support downstream-impact statements.
 
-## Final checks
+## Required evidence bundle
 
-No raw/model payloads or secrets in Git; no unsupported commercial-use claim; no paid requirement or expiring trial; no live deployment/benefit claim. Templates must be completed with real evidence. Link to final commit artefacts, not only mutable main-branch links. Any deferred low issue needs owner/date and explicit acknowledgement.
+- team repository URL, final commit SHA and release tag;
+- reviewed master commit;
+- requirements/traceability index;
+- source/data manifest and restore instructions;
+- deterministic baseline outputs;
+- local model/runtime/prompt/config versions;
+- held-out evaluation results with denominators;
+- failed/rejected/guarded examples;
+- UAT records and defect/retest log;
+- independent clean-rerun record;
+- technical/operational handover;
+- final decision brief and demo;
+- individual contribution evidence.
+
+## Reviewer decision
+
+The reviewer records **ACCEPTED / REWORK / BLOCKED**, actual reviewer, simulated sponsor role, date, unresolved issues and owners/due dates.
+
+A filled template, screenshot, video or fluent AI output without executed evidence is not acceptance.

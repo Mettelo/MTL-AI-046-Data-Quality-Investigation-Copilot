@@ -1,10 +1,13 @@
-# Submission
+# MTL-AI-046 — Submission pack
 
-Work in a separate Mettelo team delivery repository, not this master assignment.
+Submit the completed project in a **separate Mettelo team repository**. This master repository contains the commission, approved source material, delivery requirements and submission standard; it is not the team's implementation repository.
 
-1. Follow [team repository standard](TEAM_REPOSITORY_STANDARD.md).
-2. Complete D1–D12 and execute [acceptance tests](../project/ACCEPTANCE_CRITERIA.md).
-3. Follow [submission guide](SUBMISSION_GUIDE.md) to freeze and check evidence.
-4. Copy [final submission template](FINAL_SUBMISSION_TEMPLATE.md) to FINAL_SUBMISSION.md and fill it with actual results.
+- [Team repository standard](TEAM_REPOSITORY_STANDARD.md): exact repository naming, structure, ownership and contribution evidence.
+- [Submission guide](SUBMISSION_GUIDE.md): execution, assurance, demo and release sequence.
+- [Final submission template](FINAL_SUBMISSION_TEMPLATE.md): copy into the team repository as `submission/FINAL_SUBMISSION.md` and replace placeholders only with executed evidence.
 
-All templates start NOT RUN. No application, analysis or team result is supplied by this master. Acceptance depends on executed evidence and named independent review.
+The team submission must evidence D1–D12, the project acceptance criteria, domain/guardrail tests, three UAT tasks, independent rerun, technical handover and individual contribution.
+
+**Commissioned decision:** Prioritise a failed data-quality incident, explain the evidence-supported investigation path and produce a human-reviewed incident handover.
+
+This is a simulated organisational engagement using public/open or explicitly simulated evidence. Do not claim real-client employment, endorsement, production deployment or realised benefits. Uploaded raw/source files in the master are reference inputs, not evidence that the team has completed acquisition, validation or analysis.

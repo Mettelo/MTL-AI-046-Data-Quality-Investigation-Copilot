@@ -1,54 +1,107 @@
-# Team repository standard
+# MTL-AI-046 — Team repository standard
 
-Create **Mettelo/MTL-AI-046-<team-name>**, subject to cohort repository access arrangements. Do not put team answers in the master. Record master URL https://github.com/Mettelo/MTL-AI-046-Data-Quality-Investigation-Copilot and the reviewed master commit in the team README.
+Create **MTL-AI-046-<team-name>** under the **Mettelo GitHub organisation** and add each member using their individual GitHub account.
 
-## Required structure
+Record in the team README:
+
+- master repository: https://github.com/Mettelo/MTL-AI-046-Data-Quality-Investigation-Copilot
+- reviewed master specification commit SHA;
+- team members and assigned delivery responsibilities;
+- final team commit SHA and release tag;
+- approved data/source version and manifest;
+- exact setup and run instructions;
+- project limitations and simulated-client declaration.
+
+## Required repository structure
 
 ```text
 README.md
 CONTRIBUTIONS.md
-requirements.lock
 .gitignore
+requirements.txt or equivalent dependency lock
 config/
 src/
 app/
 tests/
 prompts/
-scenarios/manifest.csv
-data/SOURCE_REGISTER.md
-data/raw/README.md
-data/reference/
-data/metadata/
-docs/01-discovery/
-docs/02-data-governance/
-docs/03-data-model/
-docs/04-data-quality/
-docs/05-metrics/
-docs/06-ai/
-docs/07-decision-framework/
-docs/08-assurance-uat/
-docs/09-technical-handover/
-evaluation/truth/
-evaluation/results.csv
-reports/
+evaluation/
+outputs/
+data/
+  SOURCE_REGISTER.md
+  raw/
+    README.md
+  reference/
+  metadata/
+  curated/
+docs/
+  01-discovery/
+  02-data-governance/
+  03-data-model/
+  04-data-quality/
+  05-evidence/
+  06-ai/
+  07-decision-framework/
+  08-assurance-uat/
+  09-technical-handover/
 deliverables/
-submission/FINAL_SUBMISSION.md
+submission/
+  FINAL_SUBMISSION.md
 ```
 
-Do not expose evaluation/truth to inference. Public Git repositories do not provide confidentiality between folders: freeze cases before tuning, use neutral incident inputs and have a distinct evaluator keep blind truth in approved local storage until evaluation completes. Record the final truth hash/index and reviewer-access route; publish only after the blind assessment if cohort policy permits.
+Equivalent tool-specific folders are allowed only when the README provides a clear mapping to this standard. Do not create duplicate implementations simply to match folder names.
 
-Keep raw data/model weights outside Git. Use .gitignore for local data payloads, environments, caches, review databases and secrets; commit small authored fixtures and anonymised/simulated evidence intentionally. Explicitly retain approved audit/export evidence through a documented safe snapshot instead of ignoring the only review copy.
+## Data handling
 
-## README requirements
+Use the approved source described in the master `data/` pack. Where the master already contains an uploaded `data/raw/` file, the team may obtain that approved source from the master or reacquire it from the documented official URL.
 
-State business decision, simulated sponsor, team names/roles, master version, source/rights caveat, frozen cohort, six scenarios, local model and tested hardware, exact setup/run commands, baseline/model metrics and limitations. Include evidence links, workflow screenshots/static export, clean rerun, review controls and cost declaration.
+The team must still create its own source manifest recording filename, source/version, retrieval or copy date, bytes/hash, licence/terms, parser assumptions and reviewer. Do not treat the presence of a raw file in the master as proof of successful ingestion or validation.
 
-## Collaboration and review
+Large raw payloads and model weights should remain outside the team Git repository unless cohort guidance explicitly allows them. `data/raw/README.md` must explain the restore path and expected hash. Never commit credentials or paid-service secrets.
 
-Use individual accounts, meaningful commits, issues and reviewed pull requests where available. Name deliverable owners and distinct reviewers. Contributions must link authored artefacts, one substantive review and demo/handover work per member. Commit counts alone do not prove contribution. Shared accounts and one person's bulk upload cannot substitute for attribution records.
+## README and contribution evidence
 
-Every R/D/AC/DT/SC entry links to evidence at the final commit, with owner, reviewer, date and state. Preserve failed outputs and repaired versions. Pin tested dependencies and model digest; provide one documented run sequence. Equivalent paths/formats need a complete mapping in the index.
+State the commissioned decision:
 
-## Release
+> Prioritise a failed data-quality incident, explain the evidence-supported investigation path and produce a human-reviewed incident handover.
 
-Tag the final team commit (for example submission-v1), check reviewer access and retain a copy of all external inputs needed to reproduce it. A live local URL or video alone is insufficient: reviewers need source, metadata, runs, results and exports. No paid tool or external deployment can be a prerequisite for assessment.
+Name **Data Operations Lead** as the simulated sponsor.
+
+Preserve this interpretation boundary:
+
+> Validation failures show what failed; model-generated root causes remain hypotheses unless supported by evidence. Declared lineage only can support downstream-impact statements.
+
+Every member must link:
+
+- substantive artefacts they authored;
+- at least one meaningful peer review;
+- issues/PRs or equivalent collaboration evidence;
+- contribution to UAT, demo or handover.
+
+Commit count alone is not Proof of contribution.
+
+## Required business/product artefacts
+
+- **D5 Data-quality evidence and impact ledger:** `data/curated/dq-evidence-impact-ledger.csv` plus `docs/05-evidence/dq-evidence-impact-ledger.md`.
+- **D6 AI investigation evaluation:** `docs/06-ai/investigation-evaluation.md` plus `evaluation/results.csv`.
+- **D7 Investigation decision framework:** `docs/07-decision-framework/investigation-policy.md` plus `docs/07-decision-framework/case-register.csv`.
+- **D8 Working copilot and review workflow:** `app/README.md` plus `outputs/examples/`.
+- **D11 Incident operating and recommendation pack:** `deliverables/incident-operating-pack.pdf` plus `deliverables/slides/`.
+
+These are default delivery paths. An equivalent format is acceptable only when explicitly mapped in the evidence index.
+
+## Evidence index
+
+Maintain a final D1–D12 / acceptance / test / UAT evidence index with:
+
+- requirement or criterion ID;
+- artefact path;
+- executed result;
+- author;
+- distinct reviewer;
+- date;
+- final state;
+- final-commit link.
+
+## Team organisation
+
+Recommended team size: **3–5 people**. Members may combine responsibilities across delivery/business analysis, data governance, engineering, AI, product/interface and assurance. Critical calculations/evaluations and the final clean rerun should be reviewed or executed by a different member where team size permits.
